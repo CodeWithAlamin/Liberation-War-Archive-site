@@ -26,7 +26,8 @@ Liberation War Archive/
 │  ├─ interviews.html
 │  ├─ photographs.html
 │  └─ contact.html
-└─ README.md
+├─ README.md
+└─ License.md
 ```
 
 ## How to run locally
