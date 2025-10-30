@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- meta tags for SEO -->
+    <!--  -->
+    <!-- Primary -->
+    <meta
+      name="title"
+      content="Interviews - Liberation War Archive - (Alamin)"
+    />
+    <meta
+      name="description"
+      content="Preserving firsthand accounts, photographs, and documents from the struggle for independence."
+    />
+
+    <!-- Open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bangladeshmuseum.gov.bd/" />
+    <meta
+      property="og:title"
+      content="Interviews - Liberation War Archive - (Alamin)"
+    />
+    <meta
+      property="og:description"
+      content="Preserving firsthand accounts, photographs, and documents from the struggle for independence."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1722871514259-ef8166875702?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+    />
+
+    <meta
+      name="keywords"
+      content="Liberation, Bangladesh war, 1971 in Bangladesh, Archive"
+    />
+
+    <title>Interviews - Liberation War Archive - (Alamin)</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="overflow-hidden">
+      <nav
+        data-aos="zoom-out-down"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        class="navbar navbar-expand-sm bg-white bg-opacity-75 shadow fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><img
+              class="nav-logo"
+              src="../assets/images/logo.png"
+              alt="Bangladesh logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/documents.html">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/interviews.html"
+                  >Interviews</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/photographs.html"
+                  >Photographs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden">
+      <section data-aos="zoom-out" data-aos-duration="1000">
+        <div
+          class="page-hero-image d-flex justify-content-center align-items-center"
+        >
+          <span class="ovelay z-0"></span>
+          <div class="z-1 position-relative">
+            <h1 class="display-3 fw-bold text-center mt-5 text-white">
+              Documents
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-block: 5rem">
+        <div class="container">
+          <!-- <h2 class="text-center text-success display-3">Documents</h2>
+          <p class="text-center mb-4">
+            A curated catalogue of primary documents related to the Liberation
+            War.
+          </p> -->
+
+          <!-- Search / Filter -->
+          <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12 col-md-6 offset-md-3">
+              <div class="input-group">
+                <span class="input-group-text bg-white"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  id="docSearch"
+                  type="search"
+                  class="form-control"
+                  placeholder="Search documents (title, date, source)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Documents grid -->
+          <div
+            id="documentsGrid"
+            class="row g-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <!-- Document 1 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Proclamation of Independence (1971)
+                  </h5>
+                  <p class="card-text small text-muted mb-2">
+                    Official proclamation declaring independence. Foundational
+                    legal document for the new state.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> 26 March 1971
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal1"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document 2 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Instrument of Surrender (1971)</h5>
+                  <p class="card-text small text-muted mb-2">
+                    Formal instrument marking the end of hostilities in East
+                    Pakistan.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> 16 December 1971
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal2"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document 3 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Delhi Agreement / Tripartite Notes</h5>
+                  <p class="card-text small text-muted mb-2">
+                    Agreements and communications involving regional
+                    stakeholders following the conflict.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> 1972 (various)
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal3"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document 4 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Declaration by Provisional Government
+                  </h5>
+                  <p class="card-text small text-muted mb-2">
+                    Policy declaration and formation documents issued by the
+                    provisional government in exile.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> April 1971
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal4"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document 5 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Radio Broadcast Transcripts</h5>
+                  <p class="card-text small text-muted mb-2">
+                    Transcribed radio addresses and emergency broadcasts from
+                    1971 used for communication.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> 1971 (various)
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal5"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document 6 -->
+            <div class="col-12 col-md-6 col-lg-4 document-item">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Official Correspondence</h5>
+                  <p class="card-text small text-muted mb-2">
+                    Selected official letters and telegrams between civil and
+                    military authorities.
+                  </p>
+                  <p class="mb-3">
+                    <strong>Publication date:</strong> 1970–1972
+                  </p>
+                  <button
+                    class="btn btn-sm btn-success mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#docModal6"
+                  >
+                    View details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modals-->
+          <!-- Modal 1 -->
+          <div
+            class="modal fade"
+            id="docModal1"
+            tabindex="-1"
+            aria-labelledby="docModal1Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal1Label" class="modal-title">
+                    Proclamation of Independence (1971)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> 26 March 1971
+                  </p>
+                  <p>
+                    Summary: The proclamation announces the establishment of an
+                    independent state and sets out the legal and moral
+                    justification for independence. It was widely circulated by
+                    radio and through leaflets and served as a rallying document
+                    for the liberation movement.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> National archives / contemporary
+                    press releases.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div
+            class="modal fade"
+            id="docModal2"
+            tabindex="-1"
+            aria-labelledby="docModal2Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal2Label" class="modal-title">
+                    Instrument of Surrender (1971)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> 16 December 1971
+                  </p>
+                  <p>
+                    Summary: The Instrument of Surrender documents the formal
+                    capitulation that ended major hostilities. The original
+                    signed text records the terms and the parties present.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> Military archives / declassified
+                    diplomatic files.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 3 -->
+          <div
+            class="modal fade"
+            id="docModal3"
+            tabindex="-1"
+            aria-labelledby="docModal3Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal3Label" class="modal-title">
+                    Delhi Agreement / Tripartite Notes
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> 1972 (various)
+                  </p>
+                  <p>
+                    Summary: A set of communications and agreements recorded in
+                    the immediate post-conflict period addressing repatriation,
+                    administration, and diplomatic recognition.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> Foreign ministry records;
+                    diplomatic cables.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 4 -->
+          <div
+            class="modal fade"
+            id="docModal4"
+            tabindex="-1"
+            aria-labelledby="docModal4Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal4Label" class="modal-title">
+                    Declaration by Provisional Government
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> April 1971
+                  </p>
+                  <p>
+                    Summary: Provisional government circulars and policy
+                    documents describing governance priorities, emergency
+                    measures, and appeals to international bodies.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> Provisional government records and
+                    preserved communiqués.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 5 -->
+          <div
+            class="modal fade"
+            id="docModal5"
+            tabindex="-1"
+            aria-labelledby="docModal5Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal5Label" class="modal-title">
+                    Radio Broadcast Transcripts
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> 1971 (various)
+                  </p>
+                  <p>
+                    Summary: Selected transcripts of radio addresses used to
+                    mobilize public support, announce actions, and provide
+                    instructions. These transcripts help reconstruct official
+                    messaging and public communication strategies.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> Radio station archives and
+                    contemporaneous journalistic archives.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 6 -->
+          <div
+            class="modal fade"
+            id="docModal6"
+            tabindex="-1"
+            aria-labelledby="docModal6Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="docModal6Label" class="modal-title">
+                    Official Correspondence
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="small text-muted">
+                    <strong>Publication date:</strong> 1970–1972
+                  </p>
+                  <p>
+                    Summary: A selection of letters, memos, and telegrams
+                    exchanged between civilian leadership, military commanders,
+                    and foreign missions. These items shed light on
+                    decision-making, logistics, and diplomatic exchanges.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> Government archives; declassified
+                    files.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light mt-5 overflow-hidden">
+      <div class="container py-4" data-aos="zoom-out" data-aos-duration="1000">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a
+              class="navbar-brand d-inline-flex align-items-center mb-2"
+              href="/"
+            >
+              <img
+                src="../assets/images/logo.png"
+                alt="logo"
+                class="me-2"
+                style="height: 40px"
+              />
+              <span class="h5 mb-0 text-white">Liberation War Archive</span>
+            </a>
+            <p class="small mb-0">
+              Preserving firsthand accounts, photographs, and documents from the
+              struggle for independence.
+            </p>
+          </div>
+
+          <div class="col-md-3 mt-3 mt-md-0">
+            <h6 class="text-white">Quick links</h6>
+            <ul class="list-unstyled small mb-0">
+              <li>
+                <a class="text-light text-decoration-none" href="/">Home</a>
+              </li>
+              <li>
+                <a
+                  class="text-light text-decoration-none"
+                  href="./documents.html"
+                  >Documents</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-light text-decoration-none"
+                  href="./interviews.html"
+                  >Interviews</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-light text-decoration-none"
+                  href="./photographs.html"
+                  >Photographs</a
+                >
+              </li>
+              <li>
+                <a class="text-light text-decoration-none" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 text-md-end mt-3 mt-md-0">
+            <h6 class="text-white">Follow</h6>
+            <a
+              href="https://www.linkedin.com/in/CodeWithAlamin"
+              class="text-white me-2 fs-5"
+              aria-label="LinkeIn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/CodeWithAlamin"
+              class="text-white me-2 fs-5"
+              aria-label="GitHub"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://x.com/CodeWithAlamin"
+              class="text-white fs-5"
+              aria-label="X"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-3" />
+
+        <div class="d-flex justify-content-between small">
+          <div>
+            © <span id="year"></span> Liberation War Archive. All rights
+            reserved.
+          </div>
+          <div>
+            <a href="#top" class="text-light text-decoration-none"
+              >Back to top</a
+            >
+          </div>
+        </div>
+
+        <hr class="border-secondary my-3" />
+
+        <p class="text-center">
+          Made with 🧡 by
+          <a
+            href="http://codewithalamin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Alamin</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

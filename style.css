@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-image {
+  min-height: 100vh;
+
+  background-image: url(./assets/images/hero-image.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.page-hero-image {
+  min-height: 40vh;
+
+  background-image: url(./assets/images/headingbg.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.ovelay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo {
+  max-height: 3rem;
+  max-width: 3rem;
+}
+
+nav {
+  backdrop-filter: blur(10px);
+}
